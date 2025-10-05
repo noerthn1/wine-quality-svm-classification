@@ -53,4 +53,41 @@ Three main experiments were conducted:
 3. RBF SVM (Tuned)
 
 ### 3. Hyperparameter Tuning
-- Used 
+- Used 'GridSearchCV' to search over :
+  ```python
+  param_grid = {
+    'svm__C': [0.1, 1, 10, 100],
+    'svm__gamma': [0.01, 0.1, 1]
+}
+
+## 🧩 Evaluation Metrics
+- Accuracy – overall correctness of predictions
+- Precision – reliability of positive predictions
+- Recall – ability to find all actual positives
+- F1-score – harmonic mean of precision & recall
+
+## 📈 Results
+### Model Comparison (Red Wine)
+
+| Model             | Accuracy | Recall (minority) | F1 (minority) |
+| ----------------- | -------- | ----------------- | ------------- |
+| Linear SVM        | 0.85     | 0.00              | 0.00          |
+| RBF SVM (default) | 0.88     | 0.26              | 0.38          |
+| RBF SVM (tuned)   | **0.90** | **0.68**          | **0.67**      |
+
+### Model Comparison (White Wine)
+| Model             | Accuracy | Recall (minority) | F1 (minority) |
+| ----------------- | -------- | ----------------- | ------------- |
+| Linear SVM        | 0.87     | 0.04              | 0.08          |
+| RBF SVM (default) | 0.89     | 0.33              | 0.48          |
+| RBF SVM (tuned)   | **0.92** | **0.61**          | **0.69**      |
+
+### Model Comparison (Combined Dataset)
+| Model             | Accuracy | Recall (minority) | F1 (minority) |
+| ----------------- | -------- | ----------------- | ------------- |
+| Linear SVM        | 0.86     | 0.02              | 0.04          |
+| RBF SVM (default) | 0.89     | 0.29              | 0.43          |
+| RBF SVM (tuned)   | **0.91** | **0.65**          | **0.71**      |
+
+
+
