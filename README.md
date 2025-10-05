@@ -58,7 +58,7 @@ Three main experiments were conducted:
   param_grid = {
     'svm__C': [0.1, 1, 10, 100],
     'svm__gamma': [0.01, 0.1, 1]
-}
+  }
 
 ## 🧩 Evaluation Metrics
 - Accuracy – overall correctness of predictions
