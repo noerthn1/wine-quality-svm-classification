@@ -60,11 +60,15 @@ Three main experiments were conducted:
     'svm__gamma': [0.01, 0.1, 1]
   }
 
+---
+
 ## 🧩 Evaluation Metrics
 - Accuracy – overall correctness of predictions
 - Precision – reliability of positive predictions
 - Recall – ability to find all actual positives
 - F1-score – harmonic mean of precision & recall
+
+---
 
 ## 📈 Results
 ### Model Comparison (Red Wine)
@@ -88,6 +92,8 @@ Three main experiments were conducted:
 | Linear SVM        | 0.86     | 0.02              | 0.04          |
 | RBF SVM (default) | 0.89     | 0.29              | 0.43          |
 | RBF SVM (tuned)   | **0.91** | **0.65**          | **0.71**      |
+
+---
 
 ## 🎨 Visualization
 
