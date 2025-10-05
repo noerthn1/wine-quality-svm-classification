@@ -53,7 +53,7 @@ Three main experiments were conducted:
 3. RBF SVM (Tuned)
 
 ### 3. Hyperparameter Tuning
-- Used 'GridSearchCV' to search over :
+- Used `GridSearchCV` to search over :
   ```python
   param_grid = {
     'svm__C': [0.1, 1, 10, 100],
@@ -89,5 +89,9 @@ Three main experiments were conducted:
 | RBF SVM (default) | 0.89     | 0.29              | 0.43          |
 | RBF SVM (tuned)   | **0.91** | **0.65**          | **0.71**      |
 
+## 🎨 Visualization
 
+### 🔎 Confuaion Matrix
+
+### 📊 Model Comparison
 
