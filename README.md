@@ -91,7 +91,8 @@ Three main experiments were conducted:
 
 ## 🎨 Visualization
 
-### 🔎 Confuaion Matrix
+### 🔎 Confusion Matrix
+![Confusion Matrix](images/confusion.png)
 
 ### 📊 Model Comparison
-
+![Model Comparison](images/model_comparison.png)
